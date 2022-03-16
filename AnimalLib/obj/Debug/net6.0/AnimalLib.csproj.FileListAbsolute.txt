@@ -1,0 +1,12 @@
+C:\HTL\5_Klasse\POS\26-zoo\AnimalLib\bin\Debug\net6.0\AnimalLib.deps.json
+C:\HTL\5_Klasse\POS\26-zoo\AnimalLib\bin\Debug\net6.0\AnimalLib.dll
+C:\HTL\5_Klasse\POS\26-zoo\AnimalLib\bin\Debug\net6.0\AnimalLib.pdb
+C:\HTL\5_Klasse\POS\26-zoo\AnimalLib\obj\Debug\net6.0\AnimalLib.csproj.AssemblyReference.cache
+C:\HTL\5_Klasse\POS\26-zoo\AnimalLib\obj\Debug\net6.0\AnimalLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\HTL\5_Klasse\POS\26-zoo\AnimalLib\obj\Debug\net6.0\AnimalLib.AssemblyInfoInputs.cache
+C:\HTL\5_Klasse\POS\26-zoo\AnimalLib\obj\Debug\net6.0\AnimalLib.AssemblyInfo.cs
+C:\HTL\5_Klasse\POS\26-zoo\AnimalLib\obj\Debug\net6.0\AnimalLib.csproj.CoreCompileInputs.cache
+C:\HTL\5_Klasse\POS\26-zoo\AnimalLib\obj\Debug\net6.0\AnimalLib.dll
+C:\HTL\5_Klasse\POS\26-zoo\AnimalLib\obj\Debug\net6.0\refint\AnimalLib.dll
+C:\HTL\5_Klasse\POS\26-zoo\AnimalLib\obj\Debug\net6.0\AnimalLib.pdb
+C:\HTL\5_Klasse\POS\26-zoo\AnimalLib\obj\Debug\net6.0\ref\AnimalLib.dll
