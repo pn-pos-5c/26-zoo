@@ -5,10 +5,10 @@ namespace AnimalLib
     [Serializable]
     public abstract class Animal
     {
-        public string Species { get; set; }
-        public double GreenFoodPerDay { get; set; }
-        public double MeatFoodPerDay { get; set; }
-        public double Price { get; set; }
+        public abstract string Species { get; }
+        public abstract double GreenFoodPerDay { get; }
+        public abstract double MeatFoodPerDay { get; }
+        public abstract double Price { get; }
 
         internal Animal Clone()
         {
@@ -19,6 +19,11 @@ namespace AnimalLib
             var copy = (Animal)formatter.Deserialize(stream);
             stream.Close();
             return copy;
+        }
+
+        public override string ToString()
+        {
+            return Species;
         }
     }
 }

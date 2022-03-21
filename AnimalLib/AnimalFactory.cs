@@ -7,23 +7,19 @@ namespace AnimalLib
         private static readonly Dictionary<string, Animal> prototypes = new();
         public string[] AnimalNames => prototypes.Keys.OrderBy(x => x).ToArray();
         private static AnimalFactory? instance = null;
-        private int animalsCloned = 0;
+        public Dictionary<string, int> AnimalCount { get; } = new();
 
-        private AnimalFactory()
-        {
-
-        }
+        private AnimalFactory() { }
 
         static AnimalFactory()
         {
             Assembly.GetExecutingAssembly().GetTypes()
-                .Where(x => x.BaseType != null && !x.IsAbstract && !x.IsSubclassOf(typeof(Animal)))
+                .Where(x => x.BaseType != null && !x.IsAbstract && x.IsSubclassOf(typeof(Animal)))
                 .ToList()
                 .ForEach(x =>
                 {
                     var animal = Activator.CreateInstance(x) as Animal;
-                    string name = x.Name;
-                    Register(name, animal);
+                    prototypes[x.Name] = animal;
                 });
         }
 
@@ -32,24 +28,48 @@ namespace AnimalLib
             return instance ??= new AnimalFactory();
         }
 
-        private static void Register(string name, Animal? animal)
+        public double CalcGreenFood()
         {
-            Console.WriteLine($"New Animal {name}");
-            prototypes[name] = animal;
+            double sum = 0;
+            foreach (var animal in AnimalCount)
+            {
+                sum += prototypes[animal.Key].GreenFoodPerDay * animal.Value;
+            }
+            return sum;
+        }
+
+        public double CalcMeatFood()
+        {
+            double sum = 0;
+            foreach (var animal in AnimalCount)
+            {
+                sum += prototypes[animal.Key].MeatFoodPerDay * animal.Value;
+            }
+            return sum;
+        }
+
+        public double CalcTotalPrice()
+        {
+            double total = 0;
+            foreach (var animal in AnimalCount)
+            {
+                total += prototypes[animal.Key].Price * animal.Value;
+            }
+            return total;
         }
 
         public IEnumerable<Animal> Create(string name, int amount)
         {
-            if (prototypes.ContainsKey(name))
+            if (prototypes.TryGetValue(name, out Animal? animal))
             {
-                animalsCloned += amount;
+                if (!AnimalCount.TryGetValue(name, out int previous)) previous = 0;
+                AnimalCount[name] = previous + amount;
+
                 for (int i = 0; i < amount; i++)
                 {
-                    yield return prototypes[name].Clone();
+                    yield return animal.Clone();
                 }
             }
-
-            throw new NotImplementedException();
         }
     }
 }

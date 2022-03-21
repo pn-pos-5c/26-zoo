@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "23570c50-6ca3-4cff-b875-1c5e251833f7": {
+      "ProjectGuid": "23570c50-6ca3-4cff-b875-1c5e251833f7",
+      "DisplayName": "AnimalLib",
+      "ColorIndex": 0
+    },
+    "cbccd31d-b446-43c7-970f-b902e1bf1bff": {
+      "ProjectGuid": "cbccd31d-b446-43c7-970f-b902e1bf1bff",
+      "DisplayName": "Zoo",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

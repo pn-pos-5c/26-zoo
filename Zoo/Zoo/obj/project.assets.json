@@ -27,7 +27,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Philipp Niemetz\\.nuget\\packages\\": {},
+    "C:\\Users\\phili\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -36,14 +36,14 @@
       "projectUniqueName": "C:\\HTL\\5_Klasse\\POS\\26-zoo\\Zoo\\Zoo\\Zoo.csproj",
       "projectName": "Zoo",
       "projectPath": "C:\\HTL\\5_Klasse\\POS\\26-zoo\\Zoo\\Zoo\\Zoo.csproj",
-      "packagesPath": "C:\\Users\\Philipp Niemetz\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\phili\\.nuget\\packages\\",
       "outputPath": "C:\\HTL\\5_Klasse\\POS\\26-zoo\\Zoo\\Zoo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Philipp Niemetz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\phili\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -91,7 +91,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

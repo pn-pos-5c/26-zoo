@@ -26,7 +26,7 @@
             <Label>Verfügbare Spezies:</Label>
             <ComboBox Name="cboAnimals" Margin="10 0"></ComboBox>
             <TextBox Name="txtAnimalCount" Margin="0 0 10 0" Width="25"></TextBox>
-            <Button Name="btnBuy">Kaufen</Button>
+            <Button Name="btnBuy" Click="BtnBuy_Click">Kaufen</Button>
         </StackPanel>
 
         <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Background="LightGray" VerticalContentAlignment="Center" Margin="7 12">Zoo Schönbrunn</Label>
